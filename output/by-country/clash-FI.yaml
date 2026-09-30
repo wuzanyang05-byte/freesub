@@ -30,6 +30,21 @@ proxies:
     short-id: 7a0300af51a1c4cf
   servername: Miro.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 2.27.13.61
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  tls: true
+  servername: st6dbbc.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st6dbbc.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
