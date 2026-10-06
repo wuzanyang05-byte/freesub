@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 47.250.84.25
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.16.123
   port: 443
   udp: true
   type: trojan
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: 47.250.84.25
+  password: Telegram_healer_config
+  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
