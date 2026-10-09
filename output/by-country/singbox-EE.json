@@ -10,11 +10,7 @@
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+        "type": "ws"
       }
     },
     {
@@ -41,7 +37,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -68,6 +64,22 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "79.98.37.18",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "stoniy.fytpn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -75,7 +87,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
       ]
     },
     {
@@ -85,7 +98,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
