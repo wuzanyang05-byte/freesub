@@ -13,11 +13,11 @@ proxies:
   password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   server: 195.238.126.20
-  port: 9078
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: UkXRsXvR6buDMG2Y
 proxy-groups:
 - name: PROXIES
   type: select
