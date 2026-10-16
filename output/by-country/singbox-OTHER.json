@@ -5,15 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-      "server": "178.172.227.124",
-      "server_port": 14430,
-      "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "178.172.227.124"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
