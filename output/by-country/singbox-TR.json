@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "206.1.99.116",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -26,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
       "server": "62.60.233.157",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -35,7 +43,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -47,14 +55,6 @@
         "type": "grpc",
         "service_name": "GunService"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "api.apira98.org",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE"
     },
     {
       "type": "trojan",
