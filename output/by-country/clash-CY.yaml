@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.29.253
-  port: 443
+  server: 171.22.119.74
+  port: 8446
   udp: true
-  type: vless
-  uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
-  tls: true
-  servername: indi.qikbro.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: trojan
+  password: Pass-Client-1
+  sni: 171.22.119.74
+  skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: assets
+    grpc-service-name: grpc-video-call
 proxy-groups:
 - name: PROXIES
   type: select
