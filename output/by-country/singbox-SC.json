@@ -1,0 +1,100 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "154.81.141.42",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "server": "154.81.141.42",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
+      "server": "154.81.141.42",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
