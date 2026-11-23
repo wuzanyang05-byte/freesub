@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 104.18.32.47
+  server: chatgpt.com
   port: 443
   udp: true
   type: vless
