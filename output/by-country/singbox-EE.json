@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "188.225.78.178",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "13.143.239.66",
       "server_port": 443,
-      "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
       "tls": {
         "enabled": true,
-        "server_name": "cadrin.wtf",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "b3cd32g.es9.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30",
+          "short_id": "e7cffac9f8cfb434"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "cache.sync.v1"
+        "type": "grpc"
       }
     },
     {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
