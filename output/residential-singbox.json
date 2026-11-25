@@ -5,15 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "92.63.189.39",
-      "server_port": 8443,
-      "uuid": "7aa77858-f235-44d6-9434-7ab060848b17",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "avelon.onl",
-        "insecure": false
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "308230a0-0097-4158-98d7-8f09bf339d60",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
+        }
       }
     },
     {
@@ -21,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
